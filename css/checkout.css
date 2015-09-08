@@ -1,0 +1,437 @@
+.container{
+	width:958px;
+	margin:0 auto;
+	margin-top:188px;
+	background:#fff;
+	position:relative;
+	height:1206px;
+}
+body{background:#ccc;}
+.title{
+	line-height:60px;
+	font-size:26px;
+	text-indent:60px;
+	border-top:5px solid #333;
+	border-bottom:1px solid #aaa;
+}
+/*左边内容*/
+.main-left{
+	float:left;
+	width:585px;
+	margin-top:26px;
+	margin-left:16px;
+}
+.left-ingo{
+	float:left;
+}
+.left-info .li-border{
+	width:585px;
+	border-top:5px solid #333;
+	padding-bottom:20px;
+}
+h5{
+	font-size:13px;
+	line-height:34px;
+	color:#333;
+	text-indent:5px;
+	border-bottom:1px solid #aaa;
+}
+.address{
+	float:left;
+	width:241px;
+	margin-left:4px;
+}
+.address li{
+	border-top:none;
+}
+.address p{
+	line-height:20px;
+	font-size:12px;
+	border-bottom:1px solid #aaa;
+	width:241px;
+}
+.address span{
+	float:right;
+	line-height:20px;
+	font-size:12px;
+}
+.address-info{
+	font-size:12px;
+	line-height:18px;
+	padding:10px 0;
+}
+.add-address td{
+	font-size:10px;
+	color:#333;
+	line-height:22px;
+}
+.add-address input{
+	width:227px;
+	height:20px;
+	line-height:20px;
+	border:1px solid #aaa;
+}
+.select{
+	float:right;
+	width:320px;
+}
+.extract{
+	border:1px solid #c9c9c9;
+	margin-top:8px;
+}
+.extract li div{
+	text-align:center;
+	float:left;
+	font-size:14px;
+	color:#666;
+	margin-left:15px;
+	margin-top:12px;
+}
+.address-1{
+	font-size:11px;
+	color:#666;
+}
+.extract img{
+	display:block;
+	float:left;
+	margin-top:9px;
+	margin-left:18px;
+	margin-right:15px;
+	margin-bottom:6px;
+}
+.extract-chose li{
+	float:left;
+}
+.sel-delivery{
+	width:220px;
+	font-size:9px;
+	line-height:20px;
+	text-align:center;
+}
+.pick-up{
+	text-align:center;
+	font-size:9px;
+	color:#999;
+	border-left:1px solid #999;
+	border-bottom:1px solid #999;
+	width:97px;
+	line-height:20px;
+}
+.sel-delivery span{
+	font-size:9px;
+	color:#0066cb;
+}
+.delivery-way{
+	width:320px;
+	height:70px;
+	border:1px solid #c9c9c9;
+	margin-top:17px;
+}
+.delivery-way p{
+	font-size:9px;
+	line-height:30px;
+	color:#656565;
+	text-indent:8px;
+}
+.delivery-way select{
+	width:130px;
+	height:20px;
+	font-size:13px;
+	line-height:20px;
+	text-align:center;
+	border-radius:5px;
+	border:1px solid #aaa;
+}
+.delivery-way div{
+	margin-left:30px;
+}
+.contect-table p{
+	line-height:40px;
+	font-size:12px;
+	color:#333;
+}
+.contect-table span{
+	line-height:40px;
+	font-size:12px;
+	color:#666;
+}
+.contect-table td{
+	font-size:9px;
+	line-height:16px;
+	padding-left:4px;
+}
+.input-short{
+	height:30px;
+	line-height:30px;
+	width:183px;
+	border:1px solid #aaa;
+}
+.input-long{
+	height:30px;
+	line-height:30px;
+	border:1px solid #aaa;
+	width:380px;
+}
+.pay-border{
+	border:none;
+}
+.payment{
+	border:1px solid #aaa;
+	border-bottom:none;
+}
+.pay-list{
+	margin-top:25px;
+}
+.pay-list .pay-chose{
+	background:url('../images/blue_border.png') no-repeat 0 0;
+	border-right:1px solid #d1d1d1;
+	border-bottom:none;
+}
+.pay-list li{
+	float:left;
+	width:193px;
+	height:42px;
+	text-align:center;
+	line-height:42px;
+	border-right:1px solid #d1d1d1;
+	border-bottom:1px solid #d1d1d1;
+}
+.pay-list .pay-last{
+	border-right:none;
+}
+.pay-table{
+	margin-top:18px;
+}
+.pay-table td{
+	font-size:9px;
+	color:;
+	line-height:40px;
+	margin-left:12px;
+}
+h6{
+	width:445px;
+	height:28px;
+	line-height:28px;
+	border:1px solid #fa7e7e;
+	background:#fbe2e5;
+	font-size:12px;
+	border-radius:5px;
+}
+h6 img{
+	display:inline-block;
+	margin-top:5px;
+	margin-left:5px;
+}
+.car-input{
+	width:170px;
+	border:1px solid #b9b9b9;
+	line-height:26px;height:26px;
+}
+.ccv input{
+	width:45px;
+	border:1px solid #b9b9b9;
+	line-height:26px;height:26px;
+}
+.ccv{
+	font-size:9px;
+	line-height:28px;
+	color:#6e6e6e;
+}
+.zip{
+	border:1px solid #b9b9b9;
+	line-height:26px;height:26px;
+	width:90px;
+}
+.tip-cash li{
+	width:94px;
+	height:38px;
+	line-height:38px;
+	text-align:center;
+	font-size:10px;
+	color:#333;
+	float:left;
+	border:1px solid #aaa;
+}
+.custom{
+	line-height:24px;
+	color:#323232;
+	font-size:9px;
+	padding-left:8px;
+}
+.custom-input{
+	width:88px;
+	height:38px;
+	line-height:38px;
+	border:1px solid #aaa;
+	margin-left:8px;
+}
+.checkout-btn{
+	width:585px;
+	height:50px;
+	line-height:50px;
+	text-align:center;
+	color:#fff;
+	background:#0481ff;
+	font-size:17px;
+	border:none;
+	border-radius:5px;
+	margin-top:20px;
+}
+/*左边内容结束*/
+/*右边内容*/
+.main-right{
+	float:right;
+	width:328px;
+	margin-right:23px;
+	margin-top:8px;
+}
+.checkout{
+	border-top:5px solid #666;
+	margin-top:17px;
+}
+.checkout li{
+	border:1px solid #c9c9c9;
+}
+.cart th{
+	text-indent:14px;
+	background:#eee;
+	color:#666;
+	font-size:12px;
+	height:20px;
+}
+.cart td{
+	padding-left:14px;
+	font-size:10px;
+	color:#666;
+	line-height:12px;
+}
+.num span{
+	width:19px;
+	text-align:center;
+	font-size:10px;
+}
+.item{
+	height:120px;
+}
+.item-edit{
+	font-size:9px;
+	color:#0067ce;
+}
+.item-delete{
+	font-size:9px;
+	color:#aeaeae;
+}
+.code{
+	width:150px;
+	float:left;
+	padding-top:48px;
+	border-top:#949494;
+	margin-left:4px;
+}
+.code p{
+	text-indent:4px;
+	font-size:9px;
+	color:#666;
+}
+.code-input{
+	width:90px;
+	border:1px solid #cac8c9;
+	height:18px;
+}
+.counpn-submit{
+	width:50px;
+	height:20px;
+	line-height:20px;
+	color:#fff;
+	background:#0066cb;
+	border:0;
+	margin-left:3px;
+}
+.total{
+	width:158px;
+	float:right;
+	margin-top:14px;
+}
+.total th{
+	font-size:10px;
+	color:#666;
+	text-align:left;
+}
+.total td{
+	font-size:9px;
+	color:#9a9a9a;
+}
+.delivery{
+	font-size:10px;
+	text-align:center;
+	color:#666;
+	margin-top:;
+	line-height:16px;
+	margin-top:20px;
+}
+.delivery span{
+	font-size:10px;
+	color:#ff4344;
+}
+.inst{
+	line-height:30px;
+	font-size:9px;
+	color:#666;
+	text-align:center;
+}
+.obligate{
+	height:85px;
+}
+
+.info{
+	width:328px;
+	border-top:1px solid #666;
+	margin-top:6px;
+}
+.info li{
+	border:1px solid #c9c9c9;
+}
+.free{
+	text-align:center;
+	line-height:40px;
+	height:40px;
+	color:#666;
+	font-size:13px;
+}
+.free span{
+	color:#f00;
+}
+.send_info{
+	margin-top:10px;
+	margin-bottom:10px;
+}
+.send_info li{
+	font-size:13px;
+	line-height:18px;
+	color:#666;
+	float:left;
+	border:none;
+	width:25%;
+	text-align:center;
+}
+.send_info .red-color{
+	color:#f00;
+}
+.send_info .del-min{
+	font-size:17px;
+	line-height:32px;
+}
+/*右边内容结束*/
+
+
+
+
+
+
+
+
+
+
+
+
+

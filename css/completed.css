@@ -1,0 +1,111 @@
+.container{
+	width:957px;
+	margin:0 auto;
+	background:#fff;
+	height:821px;
+	border-top:5px solid #46b936;
+	margin-top:94px;
+}
+body{background:#ccc;}
+/*
+	主要内容
+*/
+h4{
+	line-height:64px;
+	font-size:26px;
+	text-align:center;
+	border-bottom:1px solid #aaa;
+	color:#333;
+}
+
+.main{
+	width:479px;
+	margin:0 auto;
+}
+h5{
+	font-size:22px;
+	line-height:60px;
+	color:#333;
+	text-align:center;
+}
+.order-desc{
+	width:450px;
+	line-height:16px;
+	font-size:10px;
+	color:#333;
+	padding-bottom:20px;
+	margin:0 auto;
+}
+.order-delivery{
+	margin:13px 0;
+}
+.order-delivery p{
+	font-size:26px;
+}
+.order-delivery li{
+	float:left;
+	text-align:center;
+	width:330px;
+	font-size:17px;
+	line-height:24px;
+	color:#333;
+}
+.order-delivery .delivery-title{
+	text-align:center;
+	font-size:10px;
+	color:#333;
+	line-height:18px;
+	border-right:1px solid #333;
+	width:148px;
+	
+}
+h6{
+	font-size:26px;
+	color:#333;
+}
+.item-list th{
+	font-size:10px;
+	color:#333;
+	line-height:30px;
+}
+.item-list td{
+	line-height:28px;
+	font-size:10px;
+	color:#333;
+}
+.subtotal td{
+	line-height:12px;
+}
+.special{
+	line-height:28px;
+	font-size:10px;
+	text-indent:4px;
+	border-top:1px solid #aaa;
+	border-bottom:1px solid #aaa;
+	margin-top:28px;
+	margin-bottom:30px;
+}
+.back-btn{
+	display:block;
+	width:177px;
+	height:48px;
+	line-height:48px;
+	border-radius:5px;
+	text-align:center;
+	margin:0 auto;
+	border:1px solid #666;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
