@@ -1,281 +1,281 @@
 <!DOCTYPE HTML>
 <html lang="en-US">
 <head>
-	<meta charset="UTF-8">
-	<title>Shopping cart</title>
-	<link rel="stylesheet" href="css/reset.css" />
-	<link rel="stylesheet" href="css/checkout.css" />
+    <meta charset="UTF-8">
+    <title>Shopping cart</title>
+    <link rel="stylesheet" href="static/css/reset.css" />
+    <link rel="stylesheet" href="static/css/checkout.css" />
 </head>
 <body>
-	<div class="container">
-		<h3 class="title">Checkout</h3>
-		<div class="main-left">
-			<ul class="left-info">
-				<li class="li-border">
-					<h5>Delivery Method Information</h5>
-					<ul class="address">
-						<li>
-							<p>Delivery To<span>Edit Address</span></p>
-							<div class="address-info">
-								919 Athens St<br/>San Francisco,CA 94112
-							</div>
-						</li>
-						<li>
-							<p>Addtional Address Info</p>
-							<table class="add-address">
-								<tr>
-									<td>Apt/Suite/building</td>
-								</tr>
-								<tr>
-									<td><input type="text" name="apt" id="" /></td>
-								</tr>
-								<tr>
-									<td>Cross Street</td>
-								</tr>
-								<tr>
-									<td><input type="text" name="street" id="" /></td>
-								</tr>
-							</table>
-						</li>
-					</ul>
-					<div class="select">
-						<ul class="extract">
-							<li>
-								<ul class="extract-chose">
-									<li class="sel-delivery">
-										You selected Delivery | <span>Edit Address</span>
-									</li>
-									<li class="pick-up"><img src="images/extract_2.png" width="25px" alt="" />Pick up</li>
-									<div class="clear-float"></div>
-								</ul>
-							</li>
-							<li>
-								<img src="images/extract_1.png" alt="" />
-								<div>
-									Delivery
-									<p class="address-1">919 Athens San Francisco 94112</p>
-								</div>
-								
-							</li>
-							<div class="clear-float"></div>
-						</ul>
-						<div class="delivery-way">
-							<p>I want my order Delivered by</p>
-							<div>
-								<select name="" id="">
-									<option value="1">Tody</option>
-								</select>
-								<select name="" id="">
-									<option value="">ASAP</option>
-								</select>
-							</div>
-						</div>
-					</div>
-					<div class="clear-float"></div>
-					
-				</li>
-				<li class="li-border">
-					<h5>Contact Information</h5>
-					<table class="contect-table">
-						<tr>
-							<td colspan="3"><p>Name<span>(Required)</span></p></td>
-						</tr>
-						<tr>
-							<td><input type="text" name="" id="" class="input-short"/></td>
-							<td><input type="text" name="" id="" class="input-short"/></td>
-							<td width="170px">Plese enter you first and last name which need to be match with your id for pick up.</td>
-						</tr>
-						<tr>
-							<td colspan="3"><p>Phone<span>(Required)</span></p></td>
-						</tr>
-						<tr>
-							<td colspan="2"><input type="text" name="" id="" class="input-long" /></td>
-							<td>We promise wont prank call you.Phone number are strictly for order issues.</td>
-						</tr>
-						<tr>
-							<td colspan="3"><p>Email<span>(Required)</span></p></td>
-						</tr>
-						<tr>
-							<td colspan="2"><input type="text" name="" id="" class="input-long"/></td>
-							<td>Primary contact option.We will send all order noticiations to your email.</td>
-						</tr>
-					</table>
-				</li>
-				<li class="li-border">
-					<h5 class="pay-border">Payment Method</h5>
-					<div class="payment">
-						<ul class="pay-list">
-							<li class="pay-chose">Credit Card</li>
-							<li>Cash</li>
-							<li class="pay-last">Paypal</li>
-							<div class="clear-float"></div>
-						</ul>
-						<table class="pay-table">
-							<tr>
-								<td width="110px">Name on Card</td>
-								<td width="450px"><input type="text" name="" id="" 
-								class="car-input"/></td>
-							</tr>
-							<tr>
-								<td>Credit Card</td>
-								<td>
-									<input type="text" name="" id="" class="car-input" />
-									<a href="#">
-										<img src="images/pay_1.png" alt="" width="40px" />
-										<img src="images/pay_2.png" alt="" width="40px" />
-										<img src="images/pay_3.png" alt="" width="40px" />
-										<img src="images/pay_4.png" alt="" width="40px" />
-									</a>
-								</td>
-							</tr>
-								<td>Expiration Date</td>
-								<td>
-									<select name="" id="">
-										<option value="1">01</option>
-									</select>/
-									<select name="" id="">
-										<option value="1">2015</option>
-									</select>
-								</td>
-							</tr>
-								<td>CVV Code</td>
-								<td class="ccv">
-									<input type="text" name="" id=""  />
-									(3 digits code behind the card or 4 digits code in front on AMEX cards)
-								</td>
-							</tr>
-								<td>Billing Zip Code</td>
-								<td><input type="text" name="" id="" class="zip"/></td>
-							</tr>
-						</table>
-					</div>
-				</li>
-				<li class="li-border">
-					<h5>Tips</h5>
-					<table>
-						<tr>
-							<td>&nbsp;</td>
-							<td class="custom">
-								Custom tip
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<ul class="tip-cash">
-									<li>10%-$1.00</li>
-									<li>15%-1.50</li>
-									<li>18%-$1.80</li>
-									<li>20%-2.00</li>
-									<li>Tip With Cash</li>
-									<div class="clear-float"></div>
-								</ul>
-							</td>
-							<td><input type="text" class="custom-input"/></td>
-						</tr>
-					</table>
-					<input type="submit" value="Complete Checkout" class="checkout-btn" />
-				</li>
-			</ul>
-		</div>
-		<div class="main-right">
-			<ul class="checkout">
-				<li class="item">
-					<table  cellspacing="0" cellpadding="0" class="cart" border="0">
-						<tr valign="middle" >
-							<th width="176px">Item</th>
-							<th width="60px">Qty</th>
-							<th width="92px">Price</th>
-						</tr>
-						<tr>
-							<td>Salt and Pepper Chicken word continues<br/>
-							<a href="#" class="item-edit">Edit</a> | <a href="#" class="item-delete">Delete <img src="images/delete.png" alt="" /></a></td>
-							<td class="num">
-								<img src="images/btn_5.png" width="14px" alt="" />
-								<span >1</span>
-								<img src="images/btn_2.png" width="14px" alt="" />
-							</td>
-							<td>$10.95</td>
-						</tr>
-					</table>
-				</li>
-				<li>
-					<div class="code">
-						<form action="">
-							<p>Enter Coupon Code</p>
-							<input type="text" name="coupon" class="code-input"/><input type="submit" value="Apply" class="counpn-submit"/>
-						</form>
-					</div>
-					<div class="total">
-						<table>
-							<tr>
-								<th>Subtotal:</th>
-								<th>$15.59</th>
-							</tr>
-							<tr>
-								<th>Tax(9%):</th>
-								<th>$15.59</th>
-							</tr>
-							<tr>
-								<th width="100px;">Delivery Change:</th>
-								<th>$15.59</th>
-							</tr>
-							<tr>
-								<th>Discount:</th>
-								<th>$15.59</th>
-							</tr>
-							<tr>
-								<th colspan="2" >
-									<table align="right">
-										<tr>
-											<td>ABC:</td>
-											<td>Free item#42</td>
-										</tr>
-										<tr>
-											<td>FREE40:</td>
-											<td>-20% OFF</td>
-										</tr>
-										<tr>
-											<td>20DOFF:</td>
-											<td>-$20.00</td>
-										</tr>
-									</table>
-								</th>
-							</tr>
-							
-							<tr>
-								<th>Total:</th>
-								<th>$15.59</th>
-							</tr>
-							
-						</table>
-					</div>
-					<div class="clear-float"></div>
-					<div class="delivery">
-						Want delivery?<span>Add $0.00</span><br/>
-						Want FREE delivery?<span>Add $0.00</span>
-					</div>
-				</li>
-				<li>
-					<p class="inst">Pick/Delivery Instructions</p>
-				</li>
-				<li class="obligate">
-				</li>
-				
-			</ul>
-			<ul class="info">
-				<li>
-					<ul class="send_info">
-						<li>Delivery<br/>Minimum</li>
-						<li class="red-color del-min">$10.00</li>
-						<li>Estimate<br/>Delivery</li>
-						<li class="red-color">30-40<br/>minutes</li>
-						<div class="clear-float"></div>
-					</ul>
-				</li>
-				<li class="free"><span>Free delivery</span> on all order over <span>$25.00</span></li>
-			</ul>
-		</div>
-		<div class="clear-float"></div>
-	</div>
+    <div class="container">
+        <h3 class="title">Checkout</h3>
+        <div class="main-left">
+            <ul class="left-info">
+                <li class="li-border">
+                    <h5>Delivery Method Information</h5>
+                    <ul class="address">
+                        <li>
+                            <p>Delivery To<span>Edit Address</span></p>
+                            <div class="address-info">
+                                919 Athens St<br/>San Francisco,CA 94112
+                            </div>
+                        </li>
+                        <li>
+                            <p>Addtional Address Info</p>
+                            <table class="add-address">
+                                <tr>
+                                    <td>Apt/Suite/building</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" name="apt" id="" /></td>
+                                </tr>
+                                <tr>
+                                    <td>Cross Street</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" name="street" id="" /></td>
+                                </tr>
+                            </table>
+                        </li>
+                    </ul>
+                    <div class="select">
+                        <ul class="extract">
+                            <li>
+                                <ul class="extract-chose">
+                                    <li class="sel-delivery">
+                                        You selected Delivery | <span>Edit Address</span>
+                                    </li>
+                                    <li class="pick-up"><img src="static/images/extract_2.png" width="25px" alt="" />Pick up</li>
+                                    <div class="clear-float"></div>
+                                </ul>
+                            </li>
+                            <li>
+                                <img src="static/images/extract_1.png" alt="" />
+                                <div>
+                                    Delivery
+                                    <p class="address-1">919 Athens San Francisco 94112</p>
+                                </div>
+                                
+                            </li>
+                            <div class="clear-float"></div>
+                        </ul>
+                        <div class="delivery-way">
+                            <p>I want my order Delivered by</p>
+                            <div>
+                                <select name="" id="">
+                                    <option value="1">Tody</option>
+                                </select>
+                                <select name="" id="">
+                                    <option value="">ASAP</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clear-float"></div>
+                    
+                </li>
+                <li class="li-border">
+                    <h5>Contact Information</h5>
+                    <table class="contect-table">
+                        <tr>
+                            <td colspan="3"><p>Name<span>(Required)</span></p></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="" id="" class="input-short"/></td>
+                            <td><input type="text" name="" id="" class="input-short"/></td>
+                            <td width="170px">Plese enter you first and last name which need to be match with your id for pick up.</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3"><p>Phone<span>(Required)</span></p></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><input type="text" name="" id="" class="input-long" /></td>
+                            <td>We promise wont prank call you.Phone number are strictly for order issues.</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3"><p>Email<span>(Required)</span></p></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><input type="text" name="" id="" class="input-long"/></td>
+                            <td>Primary contact option.We will send all order noticiations to your email.</td>
+                        </tr>
+                    </table>
+                </li>
+                <li class="li-border">
+                    <h5 class="pay-border">Payment Method</h5>
+                    <div class="payment">
+                        <ul class="pay-list">
+                            <li class="pay-chose">Credit Card</li>
+                            <li>Cash</li>
+                            <li class="pay-last">Paypal</li>
+                            <div class="clear-float"></div>
+                        </ul>
+                        <table class="pay-table">
+                            <tr>
+                                <td width="110px">Name on Card</td>
+                                <td width="450px"><input type="text" name="" id="" 
+                                class="car-input"/></td>
+                            </tr>
+                            <tr>
+                                <td>Credit Card</td>
+                                <td>
+                                    <input type="text" name="" id="" class="car-input" />
+                                    <a href="#">
+                                        <img src="static/images/pay_1.png" alt="" width="40px" />
+                                        <img src="static/images/pay_2.png" alt="" width="40px" />
+                                        <img src="static/images/pay_3.png" alt="" width="40px" />
+                                        <img src="static/images/pay_4.png" alt="" width="40px" />
+                                    </a>
+                                </td>
+                            </tr>
+                                <td>Expiration Date</td>
+                                <td>
+                                    <select name="" id="">
+                                        <option value="1">01</option>
+                                    </select>/
+                                    <select name="" id="">
+                                        <option value="1">2015</option>
+                                    </select>
+                                </td>
+                            </tr>
+                                <td>CVV Code</td>
+                                <td class="ccv">
+                                    <input type="text" name="" id=""  />
+                                    (3 digits code behind the card or 4 digits code in front on AMEX cards)
+                                </td>
+                            </tr>
+                                <td>Billing Zip Code</td>
+                                <td><input type="text" name="" id="" class="zip"/></td>
+                            </tr>
+                        </table>
+                    </div>
+                </li>
+                <li class="li-border">
+                    <h5>Tips</h5>
+                    <table>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td class="custom">
+                                Custom tip
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <ul class="tip-cash">
+                                    <li>10%-$1.00</li>
+                                    <li>15%-1.50</li>
+                                    <li>18%-$1.80</li>
+                                    <li>20%-2.00</li>
+                                    <li>Tip With Cash</li>
+                                    <div class="clear-float"></div>
+                                </ul>
+                            </td>
+                            <td><input type="text" class="custom-input"/></td>
+                        </tr>
+                    </table>
+                    <input type="submit" value="Complete Checkout" class="checkout-btn" />
+                </li>
+            </ul>
+        </div>
+        <div class="main-right">
+            <ul class="checkout">
+                <li class="item">
+                    <table  cellspacing="0" cellpadding="0" class="cart" border="0">
+                        <tr valign="middle" >
+                            <th width="176px">Item</th>
+                            <th width="60px">Qty</th>
+                            <th width="92px">Price</th>
+                        </tr>
+                        <tr>
+                            <td>Salt and Pepper Chicken word continues<br/>
+                            <a href="#" class="item-edit">Edit</a> | <a href="#" class="item-delete">Delete <img src="static/images/delete.png" alt="" /></a></td>
+                            <td class="num">
+                                <img src="static/images/btn_5.png" width="14px" alt="" />
+                                <span >1</span>
+                                <img src="static/images/btn_2.png" width="14px" alt="" />
+                            </td>
+                            <td>$10.95</td>
+                        </tr>
+                    </table>
+                </li>
+                <li>
+                    <div class="code">
+                        <form action="">
+                            <p>Enter Coupon Code</p>
+                            <input type="text" name="coupon" class="code-input"/><input type="submit" value="Apply" class="counpn-submit"/>
+                        </form>
+                    </div>
+                    <div class="total">
+                        <table>
+                            <tr>
+                                <th>Subtotal:</th>
+                                <th>$15.59</th>
+                            </tr>
+                            <tr>
+                                <th>Tax(9%):</th>
+                                <th>$15.59</th>
+                            </tr>
+                            <tr>
+                                <th width="100px;">Delivery Change:</th>
+                                <th>$15.59</th>
+                            </tr>
+                            <tr>
+                                <th>Discount:</th>
+                                <th>$15.59</th>
+                            </tr>
+                            <tr>
+                                <th colspan="2" >
+                                    <table align="right">
+                                        <tr>
+                                            <td>ABC:</td>
+                                            <td>Free item#42</td>
+                                        </tr>
+                                        <tr>
+                                            <td>FREE40:</td>
+                                            <td>-20% OFF</td>
+                                        </tr>
+                                        <tr>
+                                            <td>20DOFF:</td>
+                                            <td>-$20.00</td>
+                                        </tr>
+                                    </table>
+                                </th>
+                            </tr>
+                            
+                            <tr>
+                                <th>Total:</th>
+                                <th>$15.59</th>
+                            </tr>
+                            
+                        </table>
+                    </div>
+                    <div class="clear-float"></div>
+                    <div class="delivery">
+                        Want delivery?<span>Add $0.00</span><br/>
+                        Want FREE delivery?<span>Add $0.00</span>
+                    </div>
+                </li>
+                <li>
+                    <p class="inst">Pick/Delivery Instructions</p>
+                </li>
+                <li class="obligate">
+                </li>
+                
+            </ul>
+            <ul class="info">
+                <li>
+                    <ul class="send_info">
+                        <li>Delivery<br/>Minimum</li>
+                        <li class="red-color del-min">$10.00</li>
+                        <li>Estimate<br/>Delivery</li>
+                        <li class="red-color">30-40<br/>minutes</li>
+                        <div class="clear-float"></div>
+                    </ul>
+                </li>
+                <li class="free"><span>Free delivery</span> on all order over <span>$25.00</span></li>
+            </ul>
+        </div>
+        <div class="clear-float"></div>
+    </div>
 </body>
 </html>

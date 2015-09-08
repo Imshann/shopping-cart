@@ -127,7 +127,7 @@ h6{
 }
 .choose-list{
 	float:right;
-	background:url('../images/border.png') repeat-y 0 0;
+	background:url('../static/images/border.png') repeat-y 0 0;
 	width:293px;
 }
 .choose-list li{
