@@ -63,8 +63,12 @@
         <a href="#" class="continue-btn">Continue</a>
     </div>
     <script type="text/javascript" src="sea-modules/seajs/sea.js"></script>
+    <script type="text/javascript" src="sea-modules/seajs/sea-config.js"></script>
     <script type="text/javascript">
-    
+        seajs.use("app/account", function(a){
+            // a.doSomething();
+            a.abc();
+        });
     </script>
 </body>
 </html>
