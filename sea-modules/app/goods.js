@@ -7,7 +7,7 @@ define(['jquery'], function (require, exports, module) {
         init: function () {
             this.columnChange();
 			this.doubleChange();
-			this.upanddown();
+			this.upAndDown();
 			this.singleChange();
         },
 
