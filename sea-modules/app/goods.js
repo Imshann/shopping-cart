@@ -42,7 +42,7 @@ define(['jquery'], function (require, exports, module) {
 		 *上拉和下拉功能
 		 *@author yi
 		 */
-		upanddown: function () {
+		upAndDown: function () {
 			$(".up-down").click(function(){
 				var a = $(this).parent().next(".item-list").css("display");
 				if(a=="block"){
