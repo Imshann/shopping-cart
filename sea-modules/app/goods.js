@@ -2,19 +2,12 @@
  * 商品模块
  * @author Shann
  */
-define(['jquery'], function (require, exports, module) {
+define(['jquery'], function(require, exports, module) {
     module.exports = {
-        init: function () {
-            this.columnChange();
-			this.doubleChange();
-			this.upAndDown();
-			this.singleChange();
-        },
-
-        columnChange: function () {
-            $('.single, .double').click(function () {
-                //alert(1);
-            })
+        init: function() {
+            this.doubleChange();
+            this.upAndDown();
+            this.singleChange();
         },
 		/*
 		 *双列功能
@@ -60,6 +53,6 @@ define(['jquery'], function (require, exports, module) {
 					$(this).find("img").attr("src","static/images/direction_1.png");
 				};
 			});
-		}
+		},
     };
 });
