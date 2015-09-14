@@ -141,7 +141,8 @@ h2 div{
 	border:1px solid #0066cb;
 	border-radius:5px;
 	height:36px;
-	
+	width:328px;
+	float:right;
 }
 .menu-list li{
 	float:left;
