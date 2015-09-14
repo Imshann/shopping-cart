@@ -2,14 +2,10 @@
  * 商品模块
  * @author Shann
  */
-define(['jquery'], function(require, exports, module) {
-    module.exports = {
-        init: function() {
-            this.doubleChange();
-            this.upAndDown();
-            this.singleChange();
-        },
+define(function(require, exports, module) {
 
+    module.exports = {
+       
         /*
          *双列功能
          *@author yi
@@ -65,4 +61,6 @@ define(['jquery'], function(require, exports, module) {
             });
         } 
     };
+
+    module.startup();
 });
