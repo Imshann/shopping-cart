@@ -3,6 +3,12 @@ seajs.config({
     base: "./sea-modules/",
     debug: true,
     alias: {
-        "jquery": "jquery/jquery-1.11.1.min.js"
-    }
+        "jquery": "jquery/jquery-1.11.1.min",
+        "public": "app/public"
+    },
+    preload:[
+        'jquery',
+        'public'
+    ],
+    charset: 'utf-8'
 })
