@@ -62,5 +62,6 @@ define(function(require, exports, module) {
         } 
     };
 
+    // 启动s
     module.startup();
 });
