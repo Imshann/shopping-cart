@@ -22,9 +22,12 @@ define(['jquery'], function (require, exports, module) {
 		 */
 		doubleChange: function () {
 			$('.double').click(function(){
-				$('.main-left').css({width:'460px',"margin-top":'64px'});
+				$('.main-left').css({width:'460px',"margin-top":'46px'});
 				$('.double-c').css({display:"block"});
 				$(".right-menu").css({display:"none"});
+				
+				$('.double').css({background:'#0066cb',color:'#fff'}).find('img').attr('src','static/images/menu_icon_1.png');
+				$('.single').css({background:'#fff',color:'#666'}).find('img').attr('src','static/images/menu_icon_2.png');
 			})
 		},
 		/*
@@ -36,6 +39,8 @@ define(['jquery'], function (require, exports, module) {
 				$('.main-left').css({width:'565px',"margin-top":'0'});
 				$('.double-c').css({display:"none"});
 				$(".right-menu").css({display:"block"});
+				$('.single').css({background:'#0066cb',color:'#fff'}).find('img').attr('src','static/images/menu_icon_1.png');
+				$('.double').css({background:'#fff',color:'#666'}).find('img').attr('src','static/images/menu_icon_2.png');
 			})
 		},
 		/*
