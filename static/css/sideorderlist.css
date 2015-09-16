@@ -121,15 +121,12 @@ h2 div{
 	float:right;
 	width:328px;
 	margin-right:23px;
-	margin-top:8px;
 }
 .double-c{
 	display:none;
 	float:right;
 	margin-right:23px;
 	width:444px;
-	margin-top:8px;
-	
 }
 .double-c .price{
 	margin-right:50px;
@@ -141,7 +138,8 @@ h2 div{
 	border:1px solid #0066cb;
 	border-radius:5px;
 	height:36px;
-	//width:328px;
+	margin-top:8px;
+	margin-right:23px;
 	float:right;
 }
 .menu-list li{

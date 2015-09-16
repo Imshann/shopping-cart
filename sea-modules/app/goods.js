@@ -12,17 +12,22 @@ define(function(require, exports, module) {
          */
         doubleChange: function() {
             $('.double').click(function() {
-                $('.main-left').css({
+                //$('.main-left').css({
+                //    width: '460px',
+                //    "margin-top": '46px'
+                //});
+				$('.main-left').animate({
                     width: '460px',
                     "margin-top": '46px'
-                });
-                $('.double-c').css({
-                    display: "block"
-                });
-                $(".right-menu").css({
-                    display: "none"
-                });
-
+                },200);
+                //$('.double-c').css({
+                //    display: "block"
+                //});
+				$('.double-c').slideDown(600);
+                //$(".right-menu").css({
+                //    display: "none"
+                //});
+                $(".right-menu").slideUp(200);
                 $('.double').css({
                     background: '#0066cb',
                     color: '#fff'
@@ -39,16 +44,18 @@ define(function(require, exports, module) {
          */
         singleChange: function() {
             $('.single').click(function() {
-                $('.main-left').css({
+                $('.main-left').animate({
                     width: '565px',
                     "margin-top": '0'
-                });
-                $('.double-c').css({
-                    display: "none"
-                });
-                $(".right-menu").css({
-                    display: "block"
-                });
+                },800);
+                //$('.double-c').css({
+                //    display: "none"
+                //});
+                $('.double-c').slideUp(200);
+                //$(".right-menu").css({
+                //    display: "block"
+                //});
+                $(".right-menu").slideDown(600);
                 $('.single').css({
                     background: '#0066cb',
                     color: '#fff'
