@@ -12,6 +12,37 @@ body{background:#ccc;}
 	top:345px;
 	left:-48px;
 }
+.jump-main{
+	width:238px;
+	height:345px;
+	background:#fff;
+	position:absolute;
+	top:345px;
+	left:0;
+	border-bottom:5px solid #686868;
+	display:none;
+}
+.jump-main div{
+	font-size:12px;
+	color:#666;
+	line-height:18px;
+	padding-left:20px;
+}
+.jump-catgory li{
+	font-size:12px;
+	color:#666;
+	line-height:32px;
+	border-bottom:1px solid #000;
+	margin-left:11px;
+}
+.jump-close{
+	font-size:9px;
+	color:#0066cb;
+	margin-top:7px;
+	margin-right:10px;
+	float:right;
+	
+}
 /*头部导航*/
 .nav{
 	width:950px;
