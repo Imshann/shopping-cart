@@ -4,7 +4,7 @@ seajs.config({
     debug: true,
     alias: {
         "jquery": "jquery/jquery-1.11.1.min",
-        "artDialog": "art-dialog/dialog-plus-min",
+        "art-dialog": "art-dialog/dialog-min",
         "public": "app/public"
     },
     preload:[

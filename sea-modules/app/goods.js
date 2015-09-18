@@ -4,6 +4,12 @@
  */
 define(function(require, exports, module) {
 
+    var d = dialog({
+        title: 'message',
+        content: '123'
+    });
+    d.showModal();
+
     module.exports = {
 
         /*
@@ -16,14 +22,14 @@ define(function(require, exports, module) {
                 //    width: '460px',
                 //    "margin-top": '46px'
                 //});
-				$('.main-left').animate({
+                $('.main-left').animate({
                     width: '460px',
                     "margin-top": '46px'
-                },200);
+                }, 200);
                 //$('.double-c').css({
                 //    display: "block"
                 //});
-				$('.double-c').slideDown(600);
+                $('.double-c').slideDown(600);
                 //$(".right-menu").css({
                 //    display: "none"
                 //});
@@ -47,7 +53,7 @@ define(function(require, exports, module) {
                 $('.main-left').animate({
                     width: '565px',
                     "margin-top": '0'
-                },800);
+                }, 800);
                 //$('.double-c').css({
                 //    display: "none"
                 //});
@@ -86,6 +92,6 @@ define(function(require, exports, module) {
         },
     };
 
-    // 启动s
+    // 启动
     module.startup();
 });
