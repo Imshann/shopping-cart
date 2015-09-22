@@ -12,8 +12,6 @@ define(['art-dialog'], function(require, exports, module) {
             
         })
         $(".check-btn").click(function(){
-            art.dialog.data("text");
-            art.dialog.open("loading.html");
         });
     }
 });

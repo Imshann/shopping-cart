@@ -3,12 +3,20 @@
  * @author Shann
  */
 define(function(require, exports, module) {
-
+	/*
+	 *显示购物车功能
+	 *@author yi
+	 */
+	var even = document.getElementById('chi');
     var d = dialog({
-        title: 'message',
-        content: '123'
+        title: 'Chirashi',
+		content:even
     });
-    d.showModal();
+	$(".check-btn").click(function(){
+        d.showModal();
+
+	});
+   
 
     module.exports = {
 
