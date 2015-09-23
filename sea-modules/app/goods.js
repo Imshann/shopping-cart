@@ -2,30 +2,17 @@
  * 商品模块
  * @author Shann
  */
+ 
 define(function(require, exports, module) {
-	/*
-	 *显示购物车功能
-	 *@author yi
-	 */
-	var even = document.getElementById('chi');
-    var d = dialog({
-        title: 'Chirashi',
-		content:even
-    });
-	$(".check-btn").click(function(){
-        d.showModal();
-
-	});
-   
 
     module.exports = {
-
         /*
          *双列功能
          *@author yi
          */
         doubleChange: function() {
             $('.double').click(function() {
+				
                 //$('.main-left').css({
                 //    width: '460px',
                 //    "margin-top": '46px'
