@@ -6,7 +6,7 @@ define(function(require, exports, module) {
 
     var d = dialog({
         title: 'message',
-        content: '123'
+        content: '<input type="text" />'
     });
     d.showModal();
 
