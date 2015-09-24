@@ -2,22 +2,17 @@
  * 商品模块
  * @author Shann
  */
+ 
 define(function(require, exports, module) {
 
-    var d = dialog({
-        title: 'message',
-        content: '<input type="text" />'
-    });
-    d.showModal();
-
     module.exports = {
-
         /*
          *双列功能
          *@author yi
          */
         doubleChange: function() {
             $('.double').click(function() {
+				
                 //$('.main-left').css({
                 //    width: '460px',
                 //    "margin-top": '46px'
