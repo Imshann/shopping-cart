@@ -67,6 +67,7 @@ define(function(require, exports, module) {
                 }).find('img').attr('src', 'static/images/menu_icon_2.png');
             })
         },
+
         /*
          *上拉和下拉功能
          *@author yi
@@ -85,6 +86,22 @@ define(function(require, exports, module) {
                 };
             });
         },
+
+        /*
+         *显示购物车功能
+         *@author yi
+         */
+        showCart: function(){
+            var even = document.getElementById('chi');
+            var d = dialog({
+                title: 'Chirashi',
+                content: even
+            });
+            $(".check-btn").click(function () {
+                d.showModal();
+            });
+        }
+
     };
 
     // 启动
