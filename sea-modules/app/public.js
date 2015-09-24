@@ -4,6 +4,10 @@
  */
 define(['art-dialog'], function (require, exports, module) {
 
+    /**
+     * 启动
+     * @author Shann
+     */
     module.constructor.prototype.startup = function () {
         $.each(this.exports, function (k, v) {
             if (k.substr(0, 1) != '_') {
