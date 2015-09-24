@@ -15,13 +15,15 @@ define(['art-dialog'], function(require, exports, module) {
 		 *显示购物车功能
 		 *@author yi
 		 */
-		var even = document.getElementById('chi');
-		var d = dialog({
-			title: 'Chirashi',
-			content:even
-		});
+	
 		$(".check-btn").click(function(){
+			var even = document.getElementById('chi');
+			var d = dialog({
+				title: 'Chirashi',
+				content:even,
+			});
 			d.showModal();
+			
 		});
 		/*
 		 *购物车展开信息和收缩信息功能
