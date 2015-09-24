@@ -2,9 +2,35 @@
  * 商品模块
  * @author Shann
  */
- 
 define(function(require, exports, module) {
-
+	/*
+	 *jump to cata的显示隐藏功能
+	 *@author yi
+	 */
+	$('.jump').click(function(){
+		$('.jump-main').slideDown();
+	});
+	$('.jump-close').click(function(){
+		$('.jump-main').slideUp();
+	});
+	/*
+	 *sort-bg的选项功能
+	 *@author yi
+	 */
+	$('.nav-two').find('li').hover(function(){
+		var num = $(this).index();
+		$('.nav-sort-bg').find('li').removeClass();
+		$('.nav-sort-bg').find('li').eq(num).addClass('nav-sort-on');
+	});
+	/*
+	 *menu的选项功能
+	 *@author yi
+	 */
+	$('.nav-menu-2').find('li').hover(function(){
+		var num = $(this).index();
+		$('.nav-menu-bg').find('li').removeClass();
+		$('.nav-menu-bg').find('li').eq(num).addClass('nav-menu-on');
+	});
     module.exports = {
         /*
          *双列功能
@@ -12,7 +38,6 @@ define(function(require, exports, module) {
          */
         doubleChange: function() {
             $('.double').click(function() {
-				
                 //$('.main-left').css({
                 //    width: '460px',
                 //    "margin-top": '46px'
@@ -86,7 +111,6 @@ define(function(require, exports, module) {
             });
         },
     };
-
     // 启动
     module.startup();
 });
