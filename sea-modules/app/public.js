@@ -12,11 +12,6 @@ define(['art-dialog'], function (require, exports, module) {
             }
         })
         /*
-         *显示购物车功能
-         *@author yi
-         */
-
-        /*
          *购物车展开信息和收缩信息功能
          *@author yi
          */
@@ -64,5 +59,6 @@ define(['art-dialog'], function (require, exports, module) {
                 alert('都给你了');
             }
         });
+
     }
 });

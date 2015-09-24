@@ -61,6 +61,16 @@ body{background:#ccc;}
 	background:#333;
 	color:#fff;
 }
+.nav-sort-bg li{
+	width:58px;
+	height:5px;
+	border:1px solid #fff;
+	border-top:none;
+}
+.nav-sort-on{
+	background:#ffaa57!important;
+}
+
 .nav-two {
 	margin-top:10px;
 }
@@ -79,6 +89,15 @@ body{background:#ccc;}
 .nav-two div{
 	font-size:9px;
 	line-height:14px;
+}
+.nav-menu-bg li{
+	width:120px;
+	height:5px;
+	border:1px solid #fff;
+	border-top:none;
+}
+.nav-menu-on{
+	background:#0066cb!important;
 }
 .nav-menu{
 	width:107px;
