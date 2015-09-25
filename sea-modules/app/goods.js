@@ -3,77 +3,6 @@
  * @author Shann
  */
 define(function(require, exports, module) {
-    /*
-     *显示购物车功能
-     *@author yi
-     */
-    var a = 0;
-    $(".extract").find('li').click(function(){
-        a++;
-
-    });
-    $(".check-btn").click(function(){
-        if(a != 0){
-            var even = document.getElementById('chi');
-            var d = dialog({
-                title: 'Chirashi',
-                content:even,
-            });
-            d.showModal();
-        }else{
-            alert('Please select a delivery method to proceed checkout');
-        }
-    });
-    /*
-     *购物车展开信息和收缩信息功能
-     *@author yi
-     */
-    $('.reviews').click(function(){
-        var rev = $('.rating-info').css('display');
-        if(rev == 'block'){
-            $('.rating-info').slideUp();
-            $(this).find('img').attr('src','static/images/down.png');
-        }else{
-            $('.rating-info').slideDown();
-            $(this).find('img').attr('src','static/images/direction.png');
-        }
-    });
-    /*
-     *购物车鼠标移动选择信息功能
-     *@author yi
-     */
-    $('.choose-list').css('display','none').first().css('display','block');
-    $('.choose').find('li').hover(function(){
-        var num = $(this).index();
-        $('.choose').find('li').removeClass();
-        $(this).addClass('choose-on');
-        $('.choose-list').css('display','none');
-        $('.choose-list').eq(num).css('display','block');
-    });
-    /*
-     *购物车增加购物数量功能
-     *@author yi
-     */
-    
-    $('.cut-num').click(function(){
-        var num = $('.num-input').val();
-        if(num >1){
-            num--;
-            $('.num-input').val(num);
-        }else{
-            alert('多少买点嘛');
-        }
-    });
-    $('.add-num').click(function(){
-        var num = $('.num-input').val();
-        if(num <100){
-            num++;
-            $('.num-input').val(num);
-        }else{
-            alert('都给你了');
-        }
-    });
-
     module.exports = {
         /*
          *双列功能
@@ -157,20 +86,82 @@ define(function(require, exports, module) {
         },
 
         /*
+         *购物车增加购物数量功能
+         *@author yi
+         */
+        changeNum: function(){
+            $('.cut-num').click(function(){
+                var num = $('.num-input').val();
+                if(num >1){
+                    num--;
+                    $('.num-input').val(num);
+                }else{
+                    alert('多少买点嘛');
+                }
+            });
+            $('.add-num').click(function(){
+                var num = $('.num-input').val();
+                if(num <100){
+                    num++;
+                    $('.num-input').val(num);
+                }else{
+                    alert('都给你了');
+                }
+            });
+        },
+        /*
+         *购物车鼠标移动选择信息功能
+         *@author yi
+         */
+        choosePieces: function(){
+            $('.choose-list').css('display','none').first().css('display','block');
+            $('.choose').find('li').hover(function(){
+                var num = $(this).index();
+                $('.choose').find('li').removeClass();
+                $(this).addClass('choose-on');
+                $('.choose-list').css('display','none');
+                $('.choose-list').eq(num).css('display','block');
+            });
+        },
+        /*
+         *购物车展开信息和收缩信息功能
+         *@author yi
+         */
+        cartShownews: function(){
+            $('.reviews').click(function(){
+                var rev = $('.rating-info').css('display');
+                if(rev == 'block'){
+                    $('.rating-info').slideUp();
+                    $(this).find('img').attr('src','static/images/down.png');
+                }else{
+                    $('.rating-info').slideDown();
+                    $(this).find('img').attr('src','static/images/direction.png');
+                }
+            });
+        },
+        /*
          *显示购物车功能
          *@author yi
          */
-        showCart: function () {
-            var even = document.getElementById('chi');
-            var d = dialog({
-                title: 'Chirashi',
-                content: even
+        showCart: function(){
+            var a = 0;
+            $(".extract").find('li').click(function(){
+                a++;
             });
-            $(".check-btn").click(function () {
-                d.showModal();
+            $(".check-btn").click(function(){
+                var even = document.getElementById('chi');
+                var d = dialog({
+                    title: 'Chirashi',
+                    content:even,
+                });
+                if(a > 0){
+                    //console.log(a);
+                    d.showModal();
+                }else{
+                    alert('Please select a delivery method to proceed checkout');
+                }
             });
         }
-
     };
     // 启动
     module.startup();

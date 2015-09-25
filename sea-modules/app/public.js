@@ -21,7 +21,7 @@ define(['art-dialog'], function (require, exports, module) {
 		 */
 		$('.jump').click(function(){
 			//$('.jump-main').slideDown();
-			$('.jump-main').animate({});
+			$('.jump-main').slideDown();
 		});
 		$('.jump-close').click(function(){
 			$('.jump-main').slideUp();
