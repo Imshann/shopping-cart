@@ -8,8 +8,7 @@ seajs.config({
         "public": "app/public"
     },
     preload:[
-        'jquery',
-        'public'
+        'jquery'
     ],
     charset: 'utf-8'
 })
