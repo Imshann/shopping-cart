@@ -2,22 +2,22 @@
  * 商品模块
  * @author Shann
  */
-define(function(require, exports, module) {
+define(function (require, exports, module) {
     /*
      *jump to cata的显示隐藏功能
      *@author yi
      */
-    $('.jump').click(function(){
+    $('.jump').click(function () {
         $('.jump-main').slideDown();
     });
-    $('.jump-close').click(function(){
+    $('.jump-close').click(function () {
         $('.jump-main').slideUp();
     });
     /*
      *sort-bg的选项功能
      *@author yi
      */
-    $('.nav-two').find('li').hover(function(){
+    $('.nav-two').find('li').hover(function () {
         var num = $(this).index();
         $('.nav-sort-bg').find('li').removeClass();
         $('.nav-sort-bg').find('li').eq(num).addClass('nav-sort-on');
@@ -26,7 +26,7 @@ define(function(require, exports, module) {
      *menu的选项功能
      *@author yi
      */
-    $('.nav-menu-2').find('li').hover(function(){
+    $('.nav-menu-2').find('li').hover(function () {
         var num = $(this).index();
         $('.nav-menu-bg').find('li').removeClass();
         $('.nav-menu-bg').find('li').eq(num).addClass('nav-menu-on');
@@ -36,8 +36,8 @@ define(function(require, exports, module) {
          *双列功能
          *@author yi
          */
-        doubleChange: function() {
-            $('.double').click(function() {
+        doubleChange: function () {
+            $('.double').click(function () {
                 //$('.main-left').css({
                 //    width: '460px',
                 //    "margin-top": '46px'
@@ -68,8 +68,8 @@ define(function(require, exports, module) {
          *单列功能
          *@author yi
          */
-        singleChange: function() {
-            $('.single').click(function() {
+        singleChange: function () {
+            $('.single').click(function () {
                 $('.main-left').animate({
                     width: '565px',
                     "margin-top": '0'
@@ -97,8 +97,8 @@ define(function(require, exports, module) {
          *上拉和下拉功能
          *@author yi
          */
-        upAndDown: function() {
-            $(".up-down").click(function() {
+        upAndDown: function () {
+            $(".up-down").click(function () {
                 var a = $(this).parent().next(".item-list").css("display");
                 if (a == "block") {
                     //$(this).parent().next(".item-list").css("display","none");
@@ -108,7 +108,8 @@ define(function(require, exports, module) {
                     //$(this).parent().next(".item-list").css("display","block");
                     $(this).parent().next(".item-list").slideDown();
                     $(this).find("img").attr("src", "static/images/direction_1.png");
-                };
+                }
+                ;
             });
         },
 
@@ -116,7 +117,7 @@ define(function(require, exports, module) {
          *显示购物车功能
          *@author yi
          */
-        showCart: function(){
+        showCart: function () {
             var even = document.getElementById('chi');
             var d = dialog({
                 title: 'Chirashi',
