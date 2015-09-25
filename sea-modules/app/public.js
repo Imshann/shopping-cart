@@ -2,14 +2,18 @@
  * 公共模块
  * @author Shann
  */
-define(['art-dialog'], function(require, exports, module) {
-    module.constructor.prototype.startup=function(){
-        $.each(this.exports, function(k,v){
-           /*  if( k.substr(0, 1) != '_' ){
+define(['art-dialog'], function (require, exports, module) {
+
+    /**
+     * 启动
+     * @author Shann
+     */
+    module.constructor.prototype.startup = function () {
+        $.each(this.exports, function (k, v) {
+            if (k.substr(0, 1) != '_') {
                 var func = v;
                 func();
-            } */
-            
+            }
         })
         /*
 		 *jump to cata的显示隐藏功能

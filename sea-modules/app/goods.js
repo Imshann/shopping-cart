@@ -79,8 +79,8 @@ define(function(require, exports, module) {
          *双列功能
          *@author yi
          */
-        doubleChange: function() {
-            $('.double').click(function() {
+        doubleChange: function () {
+            $('.double').click(function () {
                 //$('.main-left').css({
                 //    width: '460px',
                 //    "margin-top": '46px'
@@ -111,8 +111,8 @@ define(function(require, exports, module) {
          *单列功能
          *@author yi
          */
-        singleChange: function() {
-            $('.single').click(function() {
+        singleChange: function () {
+            $('.single').click(function () {
                 $('.main-left').animate({
                     width: '565px',
                     "margin-top": '0'
@@ -135,12 +135,13 @@ define(function(require, exports, module) {
                 }).find('img').attr('src', 'static/images/menu_icon_2.png');
             })
         },
+
         /*
          *上拉和下拉功能
          *@author yi
          */
-        upAndDown: function() {
-            $(".up-down").click(function() {
+        upAndDown: function () {
+            $(".up-down").click(function () {
                 var a = $(this).parent().next(".item-list").css("display");
                 if (a == "block") {
                     //$(this).parent().next(".item-list").css("display","none");
@@ -150,9 +151,26 @@ define(function(require, exports, module) {
                     //$(this).parent().next(".item-list").css("display","block");
                     $(this).parent().next(".item-list").slideDown();
                     $(this).find("img").attr("src", "static/images/direction_1.png");
-                };
+                }
+                ;
             });
         },
+
+        /*
+         *显示购物车功能
+         *@author yi
+         */
+        showCart: function () {
+            var even = document.getElementById('chi');
+            var d = dialog({
+                title: 'Chirashi',
+                content: even
+            });
+            $(".check-btn").click(function () {
+                d.showModal();
+            });
+        }
+
     };
     // 启动
     module.startup();
