@@ -16,24 +16,19 @@ define(function(require, exports, module) {
                 //});
                 $('.main-left').animate({
                     width: '460px',
-                    "margin-top": '46px'
                 }, 200);
                 //$('.double-c').css({
                 //    display: "block"
                 //});
-                $('.double-c').slideDown(600);
+                $('.double-c').css('margin-top','26px').slideDown(600);
+                $('.menu-list').css('display','none');
                 //$(".right-menu").css({
                 //    display: "none"
                 //});
-                $(".right-menu").slideUp(200);
-                $('.double').css({
-                    background: '#0066cb',
-                    color: '#fff'
-                }).find('img').attr('src', 'static/images/menu_icon_1.png');
-                $('.single').css({
-                    background: '#fff',
-                    color: '#666'
-                }).find('img').attr('src', 'static/images/menu_icon_2.png');
+                $(".right-menu").css('display','none');
+                $('.back-to').css('display','block');
+                $('.minimum').css('display','block');
+                $('.estimate').css('display','block');
             })
         },
         /*
@@ -41,11 +36,11 @@ define(function(require, exports, module) {
          *@author yi
          */
         singleChange: function () {
-            $('.single').click(function () {
+            $('.back-to').click(function () {
                 $('.main-left').animate({
                     width: '565px',
-                    "margin-top": '0'
                 }, 800);
+                $('.menu-list').slideDown();
                 //$('.double-c').css({
                 //    display: "none"
                 //});
@@ -62,6 +57,9 @@ define(function(require, exports, module) {
                     background: '#fff',
                     color: '#666'
                 }).find('img').attr('src', 'static/images/menu_icon_2.png');
+                $('.back-to').css('display','none');
+                $('.minimum').css('display','none');
+                $('.estimate').css('display','none');
             })
         },
 
@@ -84,7 +82,6 @@ define(function(require, exports, module) {
                 ;
             });
         },
-
         /*
          *购物车增加购物数量功能
          *@author yi
@@ -140,7 +137,21 @@ define(function(require, exports, module) {
             });
         },
         /*
-         *显示购物车功能
+         *显示产品信息功能
+         *@author yi
+         */
+        showProductInfo: function(){
+            $('.item-list li').find('p').click(function(){
+                var even = document.getElementById('chi');
+                var d = dialog({
+                    title: 'Chirashi',
+                    content:even,
+                });
+                d.showModal();
+            });
+        },
+        /*
+         *结账选择配送方式功能
          *@author yi
          */
         showCart: function(){
@@ -149,16 +160,35 @@ define(function(require, exports, module) {
                 a++;
             });
             $(".check-btn").click(function(){
-                var even = document.getElementById('chi');
-                var d = dialog({
-                    title: 'Chirashi',
-                    content:even,
-                });
                 if(a > 0){
                     //console.log(a);
-                    d.showModal();
+					$('.warn').slideUp();
+                    alert('ok');
                 }else{
-                    alert('Please select a delivery method to proceed checkout');
+                    $('.warn').slideDown();
+                }
+            });
+        },
+        /*
+         *结账时订单的数量添加和减少功能
+         *@author yi
+         */
+        itemNum:function(){
+            var num = $('.item-num').find('span').text();
+            $('.item-num').find('.item-num-cut').click(function(){
+                --num;
+                if(num > 0){
+                    $(this).siblings('span').text(num);
+                }else{
+                    alert('多少买点嘛！');
+                }
+            });
+            $('.item-num').find('.item-num-add').click(function(){
+                ++num;
+                if(num < 99){
+                    $(this).siblings('span').text(num);
+                }else{
+                    alert('都让你买光了！');
                 }
             });
         }
