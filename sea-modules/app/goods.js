@@ -156,8 +156,15 @@ define(function(require, exports, module) {
          */
         showCart: function(){
             var a = 0;
-            $(".extract").find('li').click(function(){
-                a++;
+            $(".extract li").eq(0).click(function(){
+                ++a;
+                $('.extract').css('display','none');
+                $('.extract-1').fadeIn();
+            });
+            $(".extract li").eq(1).click(function(){
+                ++a;
+                $('.extract').css('display','none');
+                $('.extract-1').fadeIn();
             });
             $(".check-btn").click(function(){
                 if(a > 0){
