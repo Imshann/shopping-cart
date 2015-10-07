@@ -7,57 +7,82 @@
     <link rel="stylesheet" href="static/css/base.css" />
     <link rel="stylesheet" href="static/css/account.css" />
     <link href='http://fonts.useso.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <style>
+        input.error { 
+            border: 1px solid red;
+        }
+        #login-form p.error {
+          padding-left: 16px;
+          font-weight: bold;
+          color: #EA5200;
+          font-size:14px;
+        }
+        #create-form p.error{
+            font-size:12px;
+            font-weight: bold;
+            color: #EA5200;
+            line-height: 24px;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <ul class="return">
-            <li>
-                <h3><img src="static/images/return.png" alt="" />&nbsp;&nbsp;Returning Customer</h3>
-            </li>
-            <li>
-                <p>Email</p>
-                <input type="text" name="" class="input-long" id="" />
-            </li>
-            <li>
-                <p>Password</p>
-                <input type="password" name="" id="" class="input-long"/>
-            </li>
-            <li>
-                <span>Forgot your password?Click here<br/><input type="checkbox" />&nbsp;Rember me on this computer</span>
+        <form action="" id="login-form">
+            <ul class="return">
+                <li>
+                    <h3><img src="static/images/return.png" alt="" />&nbsp;&nbsp;Returning Customer</h3>
+                </li>
+                <li>
+                    <p>Email</p>
+                    <input type="text" name="lemail" class="input-long" id="" />
+                </li>
+                <li>
+                    <p>Password</p>
+                    <input type="password" name="lpassword" id="" class="input-long"/>
+                </li>
+                <li>
+                    <span>Forgot your password?Click here<br/><input type="checkbox" />&nbsp;Rember me on this computer</span>
+                    <div class="clear-float"></div>
+                </li>
+                <li>
+                    <input type="submit" class="log-btn" value="Log In" />
+                </li>
+            </ul>
+        </form>
+        <form action="" id="create-form">
+            <ul class="create">
+                <li>
+                    <h3>
+                        <img src="static/images/create.png" alt="" />
+                        &nbsp;&nbsp;Create an Account
+                    </h3>
+                </li>
+                <li>
+                    <ul class="account">
+                        <li>
+                            <p>Email</p>
+                            <input type="text" name="cemail" id="" />
+                        </li>
+                        <li>
+                            <p>Password</p>
+                            <input type="password" name="cpassword" id="cpassword" />
+                        </li>
+                        <li>
+                            <p>Confirm Password</p>
+                            <input type="password" name="crepassword" id="" />
+                        </li>
+                    </ul>
+                    <div class="about-account">
+                        <h4>Why create an account?</h4>
+                        For a faster and better online experience sign up for an account.It is easey as 1,2,3.Lorem ipsum dolor sit amet,consectetuer adipiscing elit.
+                    </div>
+                </li>
                 <div class="clear-float"></div>
-            </li>
-            <li>
-                <input type="submit" class="log-btn" value="Log In" />
-            </li>
-        </ul>
-        <ul class="create">
-            <li>
-                <h3><img src="static/images/create.png" alt="" />&nbsp;&nbsp;Create an Account</h3>
-            </li>
-            <li>
-                <ul class="account">
-                    <li>
-                        <p>Email</p>
-                        <input type="text" name="" id="" />
-                    </li>
-                    <li>
-                        <p>Password</p>
-                        <input type="password" name="" id="" />
-                    </li>
-                    <li>
-                        <p>Confirm Password</p>
-                        <input type="password" name="" id="" />
-                    </li>
-                </ul>
-                <div class="about-account">
-                    <h4>Why create an account?</h4>
-                    For a faster and better online experience sign up for an account.It is easey as 1,2,3.Lorem ipsum dolor sit amet,consectetuer adipiscing elit.
-                </div>
-            </li>
-            <div class="clear-float"></div>
-            <li><input type="submit" class="sign-btn" value="Sign In" /></li>
-        </ul>
-        <div class="clear-float"></div>
+                <li><input type="submit" class="sign-btn" value="Sign In" /></li>
+            </ul>
+             <div class="clear-float"></div>
+        </form>
+       
         <div class="guest">
             <h6><img src="static/images/return.png" alt="" />&nbsp;&nbsp;Guest Checkout&nbsp;&nbsp;<img src="static/images/create.png" alt="" /></h6>
             <p>Customer satisfaction is out #1 priority and we understand sometimes privacy is more important than convience thus we don't enfroce customer to create an account to complete your purchase.We assure you that all data and account information will be securely enclosed in our site.But if you don't feel comforable creating an account with us please proceed with guest checkout</p>
@@ -66,10 +91,13 @@
     </div>
     <script type="text/javascript" src="sea-modules/seajs/sea.js"></script>
     <script type="text/javascript" src="sea-modules/seajs/sea-config.js"></script>
+    <script type="text/javascript" src="sea-modules/validate/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="sea-modules/validate/jquery.validate.min.js"></script>
+
     <script type="text/javascript">
-        seajs.use("app/account", function(a){
+        seajs.use(["app/public","app/account"], function(a){
             // a.doSomething();
-            a.abc();
+            
         });
     </script>
 </body>

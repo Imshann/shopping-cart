@@ -198,7 +198,8 @@ define(function(require, exports, module) {
                     alert('都让你买光了！');
                 }
             });
-        }
+        },
+
     };
     // 启动
     module.startup();
