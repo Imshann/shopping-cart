@@ -5,6 +5,7 @@
     <title>Shopping cart</title>
     <link rel="stylesheet" href="static/css/reset.css" />
     <link rel="stylesheet" href="static/css/checkout.css" />
+    <link href='http://fonts.useso.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 </head>
 <body>
     <div class="container">
@@ -45,7 +46,7 @@
                                     <li class="sel-delivery">
                                         You selected Delivery | <span>Edit Address</span>
                                     </li>
-                                    <li class="pick-up"><img src="static/images/extract_2.png" width="25px" alt="" />Pick up</li>
+                                    <li class="pick-up"><img src="static/images/extract_2.png" width="25px" alt="" class="choose-img" />Pick up</li>
                                     <div class="clear-float"></div>
                                 </ul>
                             </li>
@@ -54,6 +55,25 @@
                                 <div>
                                     Delivery
                                     <p class="address-1">919 Athens San Francisco 94112</p>
+                                </div>
+                                
+                            </li>
+                            <div class="clear-float"></div>
+                        </ul>
+                        <ul class="extract-p">
+                            <li>
+                                <ul class="extract-chose">
+                                    <li class="sel-delivery">
+                                        You selected Pick up
+                                    </li>
+                                    <li class="pick-up"><img src="static/images/extract_1.png" width="20px" alt="" />Delivery</li>
+                                    <div class="clear-float"></div>
+                                </ul>
+                            </li>
+                            <li>
+                                <img src="static/images/extract_2.png" width="40px" alt="" />
+                                <div>
+                                    Pick Up
                                 </div>
                                 
                             </li>
@@ -113,6 +133,82 @@
                         <table class="pay-table">
                             <tr>
                                 <td width="110px">Name on Card</td>
+                                <td width="450px"><input type="text" name="" id="" 
+                                class="car-input"/></td>
+                            </tr>
+                            <tr>
+                                <td>Credit Card</td>
+                                <td>
+                                    <input type="text" name="" id="" class="car-input" />
+                                    <a href="#">
+                                        <img src="static/images/pay_1.png" alt="" width="40px" />
+                                        <img src="static/images/pay_2.png" alt="" width="40px" />
+                                        <img src="static/images/pay_3.png" alt="" width="40px" />
+                                        <img src="static/images/pay_4.png" alt="" width="40px" />
+                                    </a>
+                                </td>
+                            </tr>
+                                <td>Expiration Date</td>
+                                <td>
+                                    <select name="" id="">
+                                        <option value="1">01</option>
+                                    </select>/
+                                    <select name="" id="">
+                                        <option value="1">2015</option>
+                                    </select>
+                                </td>
+                            </tr>
+                                <td>CVV Code</td>
+                                <td class="ccv">
+                                    <input type="text" name="" id=""  />
+                                    (3 digits code behind the card or 4 digits code in front on AMEX cards)
+                                </td>
+                            </tr>
+                                <td>Billing Zip Code</td>
+                                <td><input type="text" name="" id="" class="zip"/></td>
+                            </tr>
+                        </table>
+                        <table class="pay-table table-none">
+                            <tr>
+                                <td width="110px">Name on Card2</td>
+                                <td width="450px"><input type="text" name="" id="" 
+                                class="car-input"/></td>
+                            </tr>
+                            <tr>
+                                <td>Credit Card</td>
+                                <td>
+                                    <input type="text" name="" id="" class="car-input" />
+                                    <a href="#">
+                                        <img src="static/images/pay_1.png" alt="" width="40px" />
+                                        <img src="static/images/pay_2.png" alt="" width="40px" />
+                                        <img src="static/images/pay_3.png" alt="" width="40px" />
+                                        <img src="static/images/pay_4.png" alt="" width="40px" />
+                                    </a>
+                                </td>
+                            </tr>
+                                <td>Expiration Date</td>
+                                <td>
+                                    <select name="" id="">
+                                        <option value="1">01</option>
+                                    </select>/
+                                    <select name="" id="">
+                                        <option value="1">2015</option>
+                                    </select>
+                                </td>
+                            </tr>
+                                <td>CVV Code</td>
+                                <td class="ccv">
+                                    <input type="text" name="" id=""  />
+                                    (3 digits code behind the card or 4 digits code in front on AMEX cards)
+                                </td>
+                            </tr>
+                                <td>Billing Zip Code</td>
+                                <td><input type="text" name="" id="" class="zip"/></td>
+                            </tr>
+                        </table>
+                        <table class="pay-table table-none">
+                            <tr>
+                                <td width="110px">Name on Card3</td>
                                 <td width="450px"><input type="text" name="" id="" 
                                 class="car-input"/></td>
                             </tr>
@@ -278,4 +374,10 @@
         <div class="clear-float"></div>
     </div>
 </body>
+<script type="text/javascript" src="sea-modules/seajs/sea.js"></script>
+<script type="text/javascript" src="sea-modules/seajs/sea-config.js"></script>
+<script type="text/javascript" src="sea-modules/validate/jquery-1.11.1.js"></script>
+<script type="text/javascript">
+    seajs.use(["app/public","app/checkout"]);
+</script>
 </html>

@@ -62,7 +62,6 @@ define(function(require, exports, module) {
                 $('.estimate').css('display','none');
             })
         },
-
         /*
          *上拉和下拉功能
          *@author yi
