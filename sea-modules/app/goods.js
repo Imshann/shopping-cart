@@ -160,16 +160,19 @@ define(function(require, exports, module) {
                 ++a;
                 $('.extract').css('display','none');
                 $('.extract-1').fadeIn();
+                $('.check-btn a').css('background','#0066cb');
             });
             $(".extract li").eq(1).click(function(){
                 ++a;
                 $('.extract').css('display','none');
                 $('.extract-1').fadeIn();
+                $('.check-btn a').css('background','#0066cb');
             });
             $(".check-btn").click(function(){
                 if(a > 0){
                     //console.log(a);
 					$('.warn').slideUp();
+
                     alert('ok');
                 }else{
                     $('.warn').slideDown();
@@ -199,7 +202,6 @@ define(function(require, exports, module) {
                 }
             });
         },
-
     };
     // 启动
     module.startup();
