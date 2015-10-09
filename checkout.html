@@ -11,275 +11,277 @@
     <div class="container">
         <h3 class="title">Checkout</h3>
         <div class="main-left">
-            <ul class="left-info">
-                <li class="li-border">
-                    <h5>Delivery Method Information</h5>
-                    <ul class="address">
-                        <li>
-                            <p>Delivery To<span>Edit Address</span></p>
-                            <div class="address-info">
-                                919 Athens St<br/>San Francisco,CA 94112
-                            </div>
-                        </li>
-                        <li>
-                            <p>Addtional Address Info</p>
-                            <table class="add-address">
-                                <tr>
-                                    <td>Apt/Suite/building</td>
-                                </tr>
-                                <tr>
-                                    <td><input type="text" name="apt" id="" /></td>
-                                </tr>
-                                <tr>
-                                    <td>Cross Street</td>
-                                </tr>
-                                <tr>
-                                    <td><input type="text" name="street" id="" /></td>
-                                </tr>
-                            </table>
-                        </li>
-                    </ul>
-                    <div class="select">
-                        <ul class="extract">
+            <form action="" id="check-form">
+                <ul class="left-info">
+                    <li class="li-border">
+                        <h5>Delivery Method Information</h5>
+                        <ul class="address">
                             <li>
-                                <ul class="extract-chose">
-                                    <li class="sel-delivery">
-                                        You selected Delivery | <span>Edit Address</span>
-                                    </li>
-                                    <li class="pick-up"><img src="static/images/extract_2.png" width="25px" alt="" class="choose-img" />Pick up</li>
-                                    <div class="clear-float"></div>
-                                </ul>
-                            </li>
-                            <li>
-                                <img src="static/images/extract_1.png" alt="" />
-                                <div>
-                                    Delivery
-                                    <p class="address-1">919 Athens San Francisco 94112</p>
+                                <p>Delivery To<span>Edit Address</span></p>
+                                <div class="address-info">
+                                    919 Athens St<br/>San Francisco,CA 94112
                                 </div>
-                                
                             </li>
-                            <div class="clear-float"></div>
+                            <li>
+                                <p>Addtional Address Info</p>
+                                <table class="add-address">
+                                    <tr>
+                                        <td>Apt/Suite/building</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" name="apt" id="" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cross Street</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" name="street" id="" /></td>
+                                    </tr>
+                                </table>
+                            </li>
                         </ul>
-                        <ul class="extract-p">
-                            <li>
-                                <ul class="extract-chose">
-                                    <li class="sel-delivery">
-                                        You selected Pick up
-                                    </li>
-                                    <li class="pick-up"><img src="static/images/extract_1.png" width="20px" alt="" />Delivery</li>
-                                    <div class="clear-float"></div>
-                                </ul>
-                            </li>
-                            <li>
-                                <img src="static/images/extract_2.png" width="40px" alt="" />
+                        <div class="select">
+                            <ul class="extract">
+                                <li>
+                                    <ul class="extract-chose">
+                                        <li class="sel-delivery">
+                                            You selected Delivery | <span>Edit Address</span>
+                                        </li>
+                                        <li class="pick-up"><img src="static/images/extract_2.png" width="25px" alt="" class="choose-img" />Pick up</li>
+                                        <div class="clear-float"></div>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <img src="static/images/extract_1.png" alt="" />
+                                    <div>
+                                        Delivery
+                                        <p class="address-1">919 Athens San Francisco 94112</p>
+                                    </div>
+                                    
+                                </li>
+                                <div class="clear-float"></div>
+                            </ul>
+                            <ul class="extract-p">
+                                <li>
+                                    <ul class="extract-chose">
+                                        <li class="sel-delivery">
+                                            You selected Pick up
+                                        </li>
+                                        <li class="pick-up"><img src="static/images/extract_1.png" width="20px" alt="" />Delivery</li>
+                                        <div class="clear-float"></div>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <img src="static/images/extract_2.png" width="40px" alt="" />
+                                    <div>
+                                        Pick Up
+                                    </div>
+                                    
+                                </li>
+                                <div class="clear-float"></div>
+                            </ul>
+                            <div class="delivery-way">
+                                <p>I want my order Delivered by</p>
                                 <div>
-                                    Pick Up
+                                    <select name="" id="">
+                                        <option value="1">Tody</option>
+                                    </select>
+                                    <select name="" id="">
+                                        <option value="">ASAP</option>
+                                    </select>
                                 </div>
-                                
-                            </li>
-                            <div class="clear-float"></div>
-                        </ul>
-                        <div class="delivery-way">
-                            <p>I want my order Delivered by</p>
-                            <div>
-                                <select name="" id="">
-                                    <option value="1">Tody</option>
-                                </select>
-                                <select name="" id="">
-                                    <option value="">ASAP</option>
-                                </select>
                             </div>
                         </div>
-                    </div>
-                    <div class="clear-float"></div>
-                    
-                </li>
-                <li class="li-border">
-                    <h5>Contact Information</h5>
-                    <table class="contect-table">
-                        <tr>
-                            <td colspan="3"><p>Name<span>(Required)</span></p></td>
-                        </tr>
-                        <tr>
-                            <td><input type="text" name="" id="" class="input-short"/></td>
-                            <td><input type="text" name="" id="" class="input-short"/></td>
-                            <td width="170px">Plese enter you first and last name which need to be match with your id for pick up.</td>
-                        </tr>
-                        <tr>
-                            <td colspan="3"><p>Phone<span>(Required)</span></p></td>
-                        </tr>
-                        <tr>
-                            <td colspan="2"><input type="text" name="" id="" class="input-long" /></td>
-                            <td>We promise wont prank call you.Phone number are strictly for order issues.</td>
-                        </tr>
-                        <tr>
-                            <td colspan="3"><p>Email<span>(Required)</span></p></td>
-                        </tr>
-                        <tr>
-                            <td colspan="2"><input type="text" name="" id="" class="input-long"/></td>
-                            <td>Primary contact option.We will send all order noticiations to your email.</td>
-                        </tr>
-                    </table>
-                </li>
-                <li class="li-border">
-                    <h5 class="pay-border">Payment Method</h5>
-                    <div class="payment">
-                        <ul class="pay-list">
-                            <li class="pay-chose">Credit Card</li>
-                            <li>Cash</li>
-                            <li class="pay-last">Paypal</li>
-                            <div class="clear-float"></div>
-                        </ul>
-                        <table class="pay-table">
+                        <div class="clear-float"></div>
+                        
+                    </li>
+                    <li class="li-border">
+                        <h5>Contact Information</h5>
+                        <table class="contect-table">
                             <tr>
-                                <td width="110px">Name on Card</td>
-                                <td width="450px"><input type="text" name="" id="" 
-                                class="car-input"/></td>
+                                <td colspan="3"><p>Name<span>(Required)</span></p></td>
                             </tr>
                             <tr>
-                                <td>Credit Card</td>
-                                <td>
-                                    <input type="text" name="" id="" class="car-input" />
-                                    <a href="#">
-                                        <img src="static/images/pay_1.png" alt="" width="40px" />
-                                        <img src="static/images/pay_2.png" alt="" width="40px" />
-                                        <img src="static/images/pay_3.png" alt="" width="40px" />
-                                        <img src="static/images/pay_4.png" alt="" width="40px" />
-                                    </a>
-                                </td>
+                                <td><input type="text" name="shorti" id="" class="input-short"/></td>
+                                <td><input type="text" name="shorti" id="" class="input-short"/></td>
+                                <td width="170px">Plese enter you first and last name which need to be match with your id for pick up.</td>
                             </tr>
-                                <td>Expiration Date</td>
-                                <td>
-                                    <select name="" id="">
-                                        <option value="1">01</option>
-                                    </select>/
-                                    <select name="" id="">
-                                        <option value="1">2015</option>
-                                    </select>
-                                </td>
+                            <tr>
+                                <td colspan="3"><p>Phone<span>(Required)</span></p></td>
                             </tr>
-                                <td>CVV Code</td>
-                                <td class="ccv">
-                                    <input type="text" name="" id=""  />
-                                    (3 digits code behind the card or 4 digits code in front on AMEX cards)
-                                </td>
+                            <tr>
+                                <td colspan="2"><input type="text" name="phone" id="" class="input-long" /></td>
+                                <td>We promise wont prank call you.Phone number are strictly for order issues.</td>
                             </tr>
-                                <td>Billing Zip Code</td>
-                                <td><input type="text" name="" id="" class="zip"/></td>
+                            <tr>
+                                <td colspan="3"><p>Email<span>(Required)</span></p></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><input type="text" name="email" id="" class="input-long"/></td>
+                                <td>Primary contact option.We will send all order noticiations to your email.</td>
                             </tr>
                         </table>
-                        <table class="pay-table table-none">
+                    </li>
+                    <li class="li-border">
+                        <h5 class="pay-border">Payment Method</h5>
+                        <div class="payment">
+                            <ul class="pay-list">
+                                <li class="pay-chose">Credit Card</li>
+                                <li>Cash</li>
+                                <li class="pay-last">Paypal</li>
+                                <div class="clear-float"></div>
+                            </ul>
+                            <table class="pay-table">
+                                <tr>
+                                    <td width="110px">Name on Card</td>
+                                    <td width="450px"><input type="text" name="cardname" id="" 
+                                    class="car-input"/></td>
+                                </tr>
+                                <tr>
+                                    <td>Credit Card</td>
+                                    <td>
+                                        <input type="text" name="card" id="" class="car-input" />
+                                        <a href="#">
+                                            <img src="static/images/pay_1.png" alt="" width="40px" />
+                                            <img src="static/images/pay_2.png" alt="" width="40px" />
+                                            <img src="static/images/pay_3.png" alt="" width="40px" />
+                                            <img src="static/images/pay_4.png" alt="" width="40px" />
+                                        </a>
+                                    </td>
+                                </tr>
+                                    <td>Expiration Date</td>
+                                    <td>
+                                        <select name="" id="">
+                                            <option value="1">01</option>
+                                        </select>/
+                                        <select name="" id="">
+                                            <option value="1">2015</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                    <td>CVV Code</td>
+                                    <td class="ccv">
+                                        <input type="text" name="code" id=""  />
+                                        (3 digits code behind the card or 4 digits code in front on AMEX cards)
+                                    </td>
+                                </tr>
+                                    <td>Billing Zip Code</td>
+                                    <td><input type="text" name="zip" id="" class="zip"/></td>
+                                </tr>
+                            </table>
+                            <table class="pay-table table-none">
+                                <tr>
+                                    <td width="110px">Name on Card2</td>
+                                    <td width="450px"><input type="text" name="" id="" 
+                                    class="car-input"/></td>
+                                </tr>
+                                <tr>
+                                    <td>Credit Card</td>
+                                    <td>
+                                        <input type="text" name="" id="" class="car-input" />
+                                        <a href="#">
+                                            <img src="static/images/pay_1.png" alt="" width="40px" />
+                                            <img src="static/images/pay_2.png" alt="" width="40px" />
+                                            <img src="static/images/pay_3.png" alt="" width="40px" />
+                                            <img src="static/images/pay_4.png" alt="" width="40px" />
+                                        </a>
+                                    </td>
+                                </tr>
+                                    <td>Expiration Date</td>
+                                    <td>
+                                        <select name="" id="">
+                                            <option value="1">01</option>
+                                        </select>/
+                                        <select name="" id="">
+                                            <option value="1">2015</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                    <td>CVV Code</td>
+                                    <td class="ccv">
+                                        <input type="text" name="" id=""  />
+                                        (3 digits code behind the card or 4 digits code in front on AMEX cards)
+                                    </td>
+                                </tr>
+                                    <td>Billing Zip Code</td>
+                                    <td><input type="text" name="" id="" class="zip"/></td>
+                                </tr>
+                            </table>
+                            <table class="pay-table table-none">
+                                <tr>
+                                    <td width="110px">Name on Card3</td>
+                                    <td width="450px"><input type="text" name="" id="" 
+                                    class="car-input"/></td>
+                                </tr>
+                                <tr>
+                                    <td>Credit Card</td>
+                                    <td>
+                                        <input type="text" name="" id="" class="car-input" />
+                                        <a href="#">
+                                            <img src="static/images/pay_1.png" alt="" width="40px" />
+                                            <img src="static/images/pay_2.png" alt="" width="40px" />
+                                            <img src="static/images/pay_3.png" alt="" width="40px" />
+                                            <img src="static/images/pay_4.png" alt="" width="40px" />
+                                        </a>
+                                    </td>
+                                </tr>
+                                    <td>Expiration Date</td>
+                                    <td>
+                                        <select name="" id="">
+                                            <option value="1">01</option>
+                                        </select>/
+                                        <select name="" id="">
+                                            <option value="1">2015</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                    <td>CVV Code</td>
+                                    <td class="ccv">
+                                        <input type="text" name="" id=""  />
+                                        (3 digits code behind the card or 4 digits code in front on AMEX cards)
+                                    </td>
+                                </tr>
+                                    <td>Billing Zip Code</td>
+                                    <td><input type="text" name="" id="" class="zip"/></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </li>
+                    <li class="li-border">
+                        <h5>Tips</h5>
+                        <table>
                             <tr>
-                                <td width="110px">Name on Card2</td>
-                                <td width="450px"><input type="text" name="" id="" 
-                                class="car-input"/></td>
+                                <td>&nbsp;</td>
+                                <td class="custom">
+                                    Custom tip
+                                </td>
                             </tr>
                             <tr>
-                                <td>Credit Card</td>
                                 <td>
-                                    <input type="text" name="" id="" class="car-input" />
-                                    <a href="#">
-                                        <img src="static/images/pay_1.png" alt="" width="40px" />
-                                        <img src="static/images/pay_2.png" alt="" width="40px" />
-                                        <img src="static/images/pay_3.png" alt="" width="40px" />
-                                        <img src="static/images/pay_4.png" alt="" width="40px" />
-                                    </a>
+                                    <ul class="tip-cash">
+                                        <li>10%-$1.00</li>
+                                        <li>15%-1.50</li>
+                                        <li>18%-$1.80</li>
+                                        <li>20%-2.00</li>
+                                        <li>Tip With Cash</li>
+                                        <div class="clear-float"></div>
+                                    </ul>
                                 </td>
-                            </tr>
-                                <td>Expiration Date</td>
-                                <td>
-                                    <select name="" id="">
-                                        <option value="1">01</option>
-                                    </select>/
-                                    <select name="" id="">
-                                        <option value="1">2015</option>
-                                    </select>
-                                </td>
-                            </tr>
-                                <td>CVV Code</td>
-                                <td class="ccv">
-                                    <input type="text" name="" id=""  />
-                                    (3 digits code behind the card or 4 digits code in front on AMEX cards)
-                                </td>
-                            </tr>
-                                <td>Billing Zip Code</td>
-                                <td><input type="text" name="" id="" class="zip"/></td>
+                                <td><input type="text" class="custom-input"/></td>
                             </tr>
                         </table>
-                        <table class="pay-table table-none">
-                            <tr>
-                                <td width="110px">Name on Card3</td>
-                                <td width="450px"><input type="text" name="" id="" 
-                                class="car-input"/></td>
-                            </tr>
-                            <tr>
-                                <td>Credit Card</td>
-                                <td>
-                                    <input type="text" name="" id="" class="car-input" />
-                                    <a href="#">
-                                        <img src="static/images/pay_1.png" alt="" width="40px" />
-                                        <img src="static/images/pay_2.png" alt="" width="40px" />
-                                        <img src="static/images/pay_3.png" alt="" width="40px" />
-                                        <img src="static/images/pay_4.png" alt="" width="40px" />
-                                    </a>
-                                </td>
-                            </tr>
-                                <td>Expiration Date</td>
-                                <td>
-                                    <select name="" id="">
-                                        <option value="1">01</option>
-                                    </select>/
-                                    <select name="" id="">
-                                        <option value="1">2015</option>
-                                    </select>
-                                </td>
-                            </tr>
-                                <td>CVV Code</td>
-                                <td class="ccv">
-                                    <input type="text" name="" id=""  />
-                                    (3 digits code behind the card or 4 digits code in front on AMEX cards)
-                                </td>
-                            </tr>
-                                <td>Billing Zip Code</td>
-                                <td><input type="text" name="" id="" class="zip"/></td>
-                            </tr>
-                        </table>
-                    </div>
-                </li>
-                <li class="li-border">
-                    <h5>Tips</h5>
-                    <table>
-                        <tr>
-                            <td>&nbsp;</td>
-                            <td class="custom">
-                                Custom tip
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <ul class="tip-cash">
-                                    <li>10%-$1.00</li>
-                                    <li>15%-1.50</li>
-                                    <li>18%-$1.80</li>
-                                    <li>20%-2.00</li>
-                                    <li>Tip With Cash</li>
-                                    <div class="clear-float"></div>
-                                </ul>
-                            </td>
-                            <td><input type="text" class="custom-input"/></td>
-                        </tr>
-                    </table>
-                    <input type="submit" value="Complete Checkout" class="checkout-btn" />
-                </li>
-            </ul>
+                        <input type="submit" value="Complete Checkout" class="checkout-btn" />
+                    </li>
+                </ul>
+            </form>
         </div>
         <div class="main-right">
             <ul class="checkout">
                 <li class="item">
                     <table  cellspacing="0" cellpadding="0" class="cart" border="0">
                         <tr valign="middle" >
-                            <th width="176px">Item</th>
-                            <th width="60px">Qty</th>
+                            <th width="160px">Item</th>
+                            <th width="76px">Qty</th>
                             <th width="92px">Price</th>
                         </tr>
                         <tr>
@@ -377,6 +379,7 @@
 <script type="text/javascript" src="sea-modules/seajs/sea.js"></script>
 <script type="text/javascript" src="sea-modules/seajs/sea-config.js"></script>
 <script type="text/javascript" src="sea-modules/validate/jquery-1.11.1.js"></script>
+<script type="text/javascript" src="sea-modules/validate/jquery.validate.min.js"></script>
 <script type="text/javascript">
     seajs.use(["app/public","app/checkout"]);
 </script>

@@ -1,3 +1,18 @@
+input.error { 
+    border: 1px solid red;
+}
+#check-form h4.error {
+    padding-left: 16px;
+    font-weight: bold;
+    color: #EA5200;
+    font-size:14px;
+}
+#check-form h4.error{
+    font-size:12px;
+    font-weight: bold;
+    color: #EA5200;
+    line-height: 24px;
+}
 .container{
 	width:958px;
 	margin:0 auto;
@@ -92,7 +107,6 @@ h5{
 	color:#666;
 	margin-left:22px;
 	margin-top:12px;
-
 }
 .extract-p li div{
 	text-align:center;
@@ -288,6 +302,7 @@ h6 img{
 	color:#333;
 	float:left;
 	border:1px solid #aaa;
+	cursor:pointer;
 }
 .custom{
 	line-height:24px;
@@ -313,6 +328,7 @@ h6 img{
 	border:none;
 	border-radius:5px;
 	margin-top:20px;
+	cursor:pointer;
 }
 /*左边内容结束*/
 /*右边内容*/
@@ -346,6 +362,9 @@ h6 img{
 	width:19px;
 	text-align:center;
 	font-size:10px;
+}
+.num img{
+	cursor:pointer;
 }
 .item{
 	height:120px;
@@ -383,6 +402,7 @@ h6 img{
 	background:#0066cb;
 	border:0;
 	margin-left:3px;
+	cursor:pointer;
 }
 .total{
 	width:158px;
@@ -459,16 +479,3 @@ h6 img{
 	line-height:32px;
 }
 /*右边内容结束*/
-
-
-
-
-
-
-
-
-
-
-
-
-

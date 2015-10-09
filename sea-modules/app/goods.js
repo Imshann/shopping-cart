@@ -158,20 +158,29 @@ define(function(require, exports, module) {
             $(".extract li").eq(0).click(function(){
                 ++a;
                 $('.extract').css('display','none');
+                $('.extract-p').css('display','none');
                 $('.extract-1').fadeIn();
                 $('.check-btn a').css('background','#0066cb');
             });
             $(".extract li").eq(1).click(function(){
                 ++a;
+                $('.extract-1').css('display','none');
                 $('.extract').css('display','none');
-                $('.extract-1').fadeIn();
+                $('.extract-p').fadeIn();
                 $('.check-btn a').css('background','#0066cb');
+            });
+            $('.extract-1').find('.pick-up').click(function(){
+                $('.extract-1').css('display','none');
+                $('.extract-p').fadeIn();
+            });
+            $('.extract-p').find('.pick-up').click(function(){
+                $('.extract-p').css('display','none');
+                $('.extract-1').fadeIn();
             });
             $(".check-btn").click(function(){
                 if(a > 0){
                     //console.log(a);
 					$('.warn').slideUp();
-
                     alert('ok');
                 }else{
                     $('.warn').slideDown();

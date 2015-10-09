@@ -41,7 +41,7 @@ body{background:#ccc;}
 	margin-top:7px;
 	margin-right:10px;
 	float:right;
-	
+	cursor:pointer;
 }
 .back-to{
 	background:#0066ca;
@@ -52,6 +52,7 @@ body{background:#ccc;}
 	width:70px;
 	height:70px;
 	display: none;
+	cursor:pointer;
 }
 .back-to span{
 	font-size:9px;
@@ -219,6 +220,7 @@ h2 div{
 .item-list p{
 	font-size:12px;
 	line-height:18px;
+	cursor:pointer;
 }
 .item-list div{
 	color:#666;
@@ -229,6 +231,9 @@ h2 div{
 	width:19px;
 	text-align:center;
 	font-size:10px;
+}
+.item-num img{
+	cursor:pointer;
 }
 /*左边内容结束*/
 /*右边内容*/
@@ -288,6 +293,7 @@ h2 div{
 	width:145px;
 	color:#666;
 	background:none;
+	cursor:pointer;
 }
 .warn{
 	margin-top:13px;
@@ -305,12 +311,41 @@ h2 div{
 	border:1px solid #ffabab;
 	margin-top:8px;
 }
+.extract-p{
+	border:1px solid #c9c9c9;
+	margin-top:8px;
+	padding-bottom:5px;
+	display:none;
+}
+.extract-p li div{
+	text-align:center;
+	float:left;
+	font-size:14px;
+	color:#666;
+	margin-left:60px;
+	margin-top:22px;
+	
+}
+.extract-p img{
+	float:left;
+	margin-top:9px;
+	margin-left:15px;
+	margin-right:10px;
+	margin-bottom:6px;
+}
+.extract-p .choose-img{
+	width:14px;
+	margin-left:10px;
+	margin-top:4px;
+	margin-bottom:5px;
+}
 .extract li{
 	float:left;
 	width:160px;
 	line-height:70px;
 	height:70px;
 	font-size:10px;
+	cursor:pointer;
 }
 .extract img{
 	display:block;
@@ -367,6 +402,7 @@ h2 div{
 	border-bottom:1px solid #999;
 	width:105px;
 	line-height:20px;
+	cursor:pointer;
 }
 .sel-delivery span{
 	font-size:9px;
@@ -422,6 +458,7 @@ h2 div{
 	background:#0066cb;
 	border:0;
 	margin-left:3px;
+	cursor:pointer;
 }
 .total{
 	width:158px;
@@ -645,6 +682,7 @@ h6{
 	font-size:13px;
 	margin-left:10px;
 	background:#eee;
+	cursor:pointer;
 }
 .choose-list input{
 	margin-left:20px;
@@ -705,7 +743,9 @@ h6{
 	font-size:13px;
 	color:#fff;
 }
-
+.up-down{
+	cursor:pointer;
+}
 
 
 
